@@ -8,7 +8,7 @@ const baseQuery = fetchBaseQuery({
   baseUrl: BASE_URL,
   prepareHeaders: (headers) => {
     headers.set("accept", "application/json");
-    headers.set("Authorization", `Bearer ${API_KEY}`);
+    headers.set("authorization", `Bearer ${API_KEY}`);
     return headers;
   },
 });
