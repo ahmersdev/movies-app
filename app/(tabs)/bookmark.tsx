@@ -1,16 +1,16 @@
 import { View, Text, Image } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { PersonIcon } from "@/assets/icons";
+import { BookmarkIcon } from "@/assets/icons";
 
-const Profile = () => {
+const Bookmark = () => {
   return (
     <SafeAreaView className="bg-primary flex-1 px-10">
       <View className="flex justify-center items-center flex-1 flex-col gap-5">
-        <Image source={PersonIcon} className="size-10" tintColor="#fff" />
-        <Text className="text-gray-500 text-base">Profile</Text>
+        <Image source={BookmarkIcon} className="size-10" tintColor="#fff" />
+        <Text className="text-gray-500 text-base">Bookmark</Text>
       </View>
     </SafeAreaView>
   );
 };
 
-export default Profile;
+export default Bookmark;

@@ -1,6 +1,6 @@
 import { Tabs } from "expo-router";
 import TabIcon from "@/components/tab-icon";
-import { HomeIcon, PersonIcon, SaveIcon, SearchIcon } from "@/assets/icons";
+import { HomeIcon, PersonIcon, BookmarkIcon, SearchIcon } from "@/assets/icons";
 
 const Layout = () => {
   return (
@@ -47,12 +47,12 @@ const Layout = () => {
         }}
       />
       <Tabs.Screen
-        name="saved"
+        name="bookmark"
         options={{
           headerShown: false,
-          title: "Saved",
+          title: "Bookmark",
           tabBarIcon: ({ focused }) => (
-            <TabIcon focused={focused} icon={SaveIcon} title="Saved" />
+            <TabIcon focused={focused} icon={BookmarkIcon} title="Bookmark" />
           ),
         }}
       />

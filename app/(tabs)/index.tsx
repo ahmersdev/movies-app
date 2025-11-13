@@ -27,7 +27,12 @@ const HomeScreen = () => {
 
   return (
     <View className="flex-1 bg-primary">
-      <Image source={BgImg} className={"absolute w-full z-0"} />
+      <Image
+        source={BgImg}
+        className={"flex-1 absolute w-full z-0"}
+        resizeMode={"cover"}
+      />
+
       <ScrollView
         className={"flex-1 px-5"}
         showsVerticalScrollIndicator={false}
@@ -68,8 +73,8 @@ const HomeScreen = () => {
                   paddingRight: 5,
                   marginBottom: 10,
                 }}
-                className={"mt-2 pb-32"}
                 scrollEnabled={false}
+                contentContainerStyle={{ paddingBottom: 100, paddingTop: 8 }}
               />
             </>
           </View>
