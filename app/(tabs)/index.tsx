@@ -41,11 +41,7 @@ const HomeScreen = () => {
         <Image source={LogoIcon} className={"w-12 h-10 mt-20 mb-5 mx-auto"} />
 
         {isLoadingMovies || isFetchingMovies ? (
-          <ActivityIndicator
-            size="large"
-            color="#0000ff"
-            className="mt-10 self-center"
-          />
+          <ActivityIndicator size="large" color="#0000ff" className="mt-10" />
         ) : isErrorMovies ? (
           <Text className="text-white mt-10 text-center">
             Error: {movies?.status_message || "Something went wrong"}

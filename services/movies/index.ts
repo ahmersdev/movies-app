@@ -1,5 +1,6 @@
 import { MOVIES } from "@/constants/endpoints";
 import { baseAPI } from "../base-api";
+import { API_KEY } from "@/config";
 
 export const moviesAPI = baseAPI.injectEndpoints({
   endpoints: (builder) => ({
@@ -16,7 +17,18 @@ export const moviesAPI = baseAPI.injectEndpoints({
         method: "GET",
       }),
     }),
+
+    movieDetails: builder.query({
+      query: (id: string) => ({
+        url: `${MOVIES.MOVIE_DETAILS}/${id}?api_key=${API_KEY}`,
+        method: "GET",
+      }),
+    }),
   }),
 });
 
-export const { useGetMoviesListQuery, useSearchMoviesQuery } = moviesAPI;
+export const {
+  useGetMoviesListQuery,
+  useSearchMoviesQuery,
+  useMovieDetailsQuery,
+} = moviesAPI;
