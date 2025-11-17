@@ -17,7 +17,8 @@
         "foregroundImage": "./assets/images/logo-img.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.ahmer.antemtter.mobilemovieapp"
     },
     "web": {
       "output": "static",
@@ -41,6 +42,12 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "31d011fa-b32d-4ede-b0d7-34b941d1f9ab"
+      }
     }
   }
 }
